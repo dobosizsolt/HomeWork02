@@ -14,5 +14,7 @@ public class Main {
 
         System.out.println(CalculatorService.generateRandomNum());
 
+        System.out.println(CalculatorService.generatedRandomNumbers());
+
     }
 }

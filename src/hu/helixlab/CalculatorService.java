@@ -67,4 +67,33 @@ public class CalculatorService {
         }
         return result1;
     }
+
+    public static String generatedRandomNumbers() {
+
+        /**Az előzőek alapján deklaráltam a változókat majd egy
+         * if szerkezettel logikai operátorokkal megvizsgáltam a
+         * generált számokat és kiírattam konzolra.*/
+
+        Random generator1 = new Random();
+
+        int generatedNumber1;
+        int generatedNumber2;
+        double poweredNumber;
+        String result2;
+
+        generatedNumber1 = generator1.nextInt(51) + 100;
+        generatedNumber2 = generator1.nextInt(51) + 100;
+
+        if ((generatedNumber1 > generatedNumber2 && generatedNumber1 % 2 == 0) || (generatedNumber1 < generatedNumber2 && generatedNumber1 % 2 == 1)) {
+            result2 = ("\nAz első szám: " + generatedNumber1);
+        }
+        else if (generatedNumber2 > generatedNumber1 && generatedNumber2 % 2 == 1) {
+            result2 = ("\nA második szám: " + generatedNumber2);
+        }
+        else {
+            poweredNumber = Math.pow(generatedNumber1, generatedNumber2);
+            result2 = ("\nA két szám hatványa: ");
+        }
+        return result2;
+    }
 }
