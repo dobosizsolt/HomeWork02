@@ -15,4 +15,31 @@ public class CalculatorService {
         return number % 2 == 0;
 
     }
+
+
+    /**Léterhoztam egy calculate nevű float típusú metódust,
+     * aminek két int típusú és egy char típusú változót adtam bemeneti paraméterként.
+     * Inicializáltam egy float típusú result nevű változót a metódus eredményének tárolására,
+     * majd switch-case szerkezettel szétválasztottam az operation változót.*/
+
+    public static float calculate(int x, int y, char operation) {
+        float result = 0;
+        switch(operation) {
+            case '+' :
+                result = x + y;
+                break;
+            case '-' :
+                result = x - y;
+                break;
+            case '*' :
+                result = x * y;
+                break;
+            case '/' :
+                result = (float) x / y;
+                break;
+            default:
+                System.out.println("Calculation error");
+        }
+        return result;
+    }
 }
