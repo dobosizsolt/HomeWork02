@@ -1,3 +1,4 @@
+import hu.helixlab.CalculationHelper;
 import hu.helixlab.CalculatorService;
 
 public class Main {
@@ -8,6 +9,8 @@ public class Main {
 
         System.out.println(CalculatorService.isItEven(7));
         System.out.println(CalculatorService.isItEven(8));
+
+        System.out.println("\nEredmény: " + CalculationHelper.calc());
 
     }
 }
