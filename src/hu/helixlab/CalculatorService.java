@@ -42,4 +42,29 @@ public class CalculatorService {
         }
         return result;
     }
+
+    public static String generateRandomNum() {
+
+        /**Létrehoztam egy string típusú metódust, amiben
+         * deklaráltam egy float és egy string változót.
+         * nextFloat metódussal generáltam 0 és 1 között egy számot majd
+         * 25-tel megszoroztam és hozzáadtam 25-öt, így beállítottam
+         * a 25 - 50 intervallumot. If-fel megvizsgáltam, hogy a generatedNum
+         * változóban lévő érték megegyezik-e az int-té kasztolt értékével.*/
+
+        Random generator = new Random();
+
+        float generatedNum;
+        String result1;
+
+        generatedNum = generator.nextFloat() * 25 + 25;
+
+        if (generatedNum == (int) generatedNum) {
+            result1 = ("\nA " + generatedNum + " generált szám egész");
+        }
+        else {
+            result1 = ("\nA " + generatedNum + " generált szám nem egész");
+        }
+        return result1;
+    }
 }

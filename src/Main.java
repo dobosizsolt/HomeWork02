@@ -12,5 +12,7 @@ public class Main {
 
         System.out.println("\nEredmény: " + CalculationHelper.calc());
 
+        System.out.println(CalculatorService.generateRandomNum());
+
     }
 }
